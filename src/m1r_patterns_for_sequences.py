@@ -13,8 +13,8 @@ Of course, these are not the only patterns, and some problems require
 combining these patterns, but this is a good base upon which to build.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and David Gruninger.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 # ----------------------------------------------------------------------
 # TODO: 2. SKIM the program below and RUN it.
@@ -488,7 +488,7 @@ def two_sequences_in_parallel(sequence1, sequence2):
     # ------------------------------------------------------------------
     count = 0
     for k in range(len(sequence1)):
-        if sequence1[k] > sequence2[k]:
+        if sequence2[k] > sequence1[k]:
             count = count + 1
 
     return count
