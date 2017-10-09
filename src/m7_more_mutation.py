@@ -169,6 +169,9 @@ def RETURN_circle(circle, color):
     where the color is either a string that Rosegraphics understands
     or a rg.Color object.
     """
+    newcircle = circle.clone()
+    newcircle.fill_color = color
+    return newcircle
     # TODO: 2. First, READ THE ABOVE TEST CODE.
     #          Make sure that you understand it.
     #          Then, IMPLEMENT and test THIS FUNCTION
@@ -303,7 +306,7 @@ def MUTATE_circle(circle, color, n):
     """
     circle.fill_color = color
     circle.center.x += n
-    # TODO: 3. First, READ THE ABOVE TEST CODE.
+    # DONE: 3. First, READ THE ABOVE TEST CODE.
     #          Make sure that you understand it.
     #          Then, IMPLEMENT and test THIS FUNCTION
     #          (using the above code for testing).
